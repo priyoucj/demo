@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Link To CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- awosome library used  fb,twitter,linkedin buttons-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous"> 
+
+<style>
+  i {
+  width: 50px;
+  font-size: 24px;
+  }
+  .btn {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  height: 40px;
+  margin: 10px 0;
+  outline: none;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px #666;
+  background: #e8e8e8;
+  color: #fff;
+  cursor: pointer;
+}
+  .btn:hover {
+    transform: scale(1.03);
+}
+.btn span {
+font-size: 16px;
+}
+.facebook {
+background: #3a589e;
+}
+.twitter {
+background: #429cd6;
+}
+.linkedin{
+background: #2350c3;
+}
+</style>
+</head>
+<body style="background-color: rgb(205, 234, 234);">
+     <!-- Navbar -->
+     <header>
+        <!--logo name used-->
+        <a href="#" class="logo">Brown<span>Wood</span></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <div class="animation start-home"></div>   
+       </nav>
+    </header>  <br> <br><br><br>
+
+     <!--Form -->
+    <main>
+        <div class="contact-title">
+          <h2 align="center">Contact us</h2>
+        </div>
+          <div class="form__container">
+              <form action="/action_page.php">
+                <div class="row-cont">
+                  <div class="col-25">
+                    <label for="fname">First Name</label>
+                  </div>
+                  <div class="col-75">
+                    <input type="text" id="fname" name="fname">
+                  </div>
+                </div>
+                <div class="row-cont">
+                  <div class="col-25">
+                    <label for="lname">Last Name</label>
+                  </div>
+                  <div class="col-75">
+                    <input type="text" id="lname" name="lname">
+                  </div>
+                </div>
+                <div class="row-cont">
+                  <div class="col-25">
+                    <label for="email">Email</label>
+                  </div>
+                  <div class="col-75">
+                    <input type="text" id="email" name="email">
+                  </div>
+                </div>
+                <div class="row-cont">
+                  <div class="col-25">
+                    <label for="status">Client status</label>
+                  </div>
+                  <div class="col-75">
+                    <select id="status" name="status">
+                      <option value="permanent">Permanent client</option>
+                      <option value="once">Regular client</option>
+                      <option value="new">New client</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row-cont">
+                  <div class="col-25">
+                    <label for="subject">Subject</label>
+                  </div>
+                  <div class="col-75">
+                    <textarea id="subject" name="subject" style="height:200px"></textarea>
+                  </div>
+                </div>
+                <div class="row-cont">
+                  <input type="submit" value="Submit">
+                </div>
+              </form>
+              <p> Thank you. We care about your opinion</p>
+            </div>
+      </main>
+<br><br>
+<!--Social Media links-->
+    <center>
+        <img src="pic/share.svg"> <br> Share...
+        <button class="btn facebook" data-provider="facebook"><i class="fab fa-facebook-f"></i><span>Facebook</span></button>
+        <button class="btn twitter" data-provider="twitter"><i class="fab fa-twitter"></i><span>Twitter</span></button>    
+        <button class="btn linkedin" data-provider="linkedin"><i class="fab fa-linkedin"></i><span>Linkedin</span></button>    
+   </center>
+
+     <!-- Footer -->
+     <section class="footer" id="footer">
+        <div class="footer-box">
+            <h2>Brown<span>Wood</span></h2>
+            <p>BrownWood is making furniture for ages and assuring product Quality. We believe in Quality and Comfort!</p>
+        </div>
+        <div class="footer-box">
+            <h3>Services</h3>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Help & Support</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">FAQ</a></li>
+        </div>
+        <div class="footer-box">
+            <h3>Product</h3>
+            <li><a href="#">Sofa's</a></li>
+            <li><a href="#">Chair's</a></li>
+            <li><a href="#">Living Room</a></li>
+            <li><a href="#">Office</a></li>
+        </div>
+        <div class="footer-box contact-info">
+            <h3>Contact</h3>
+            <span>ManipayRoad,Jaffna</span>
+            <span>+021 56 13 120</span>
+            <span>brownwood@gmail.com</span>           
+        </div>
+    </section>
+
+    <div class="copyright">
+        <p class="copy">&#169;BrownWood Website.2023 All Right Reserved.</p>
+    </div>
+    
+    <!-- Link JS file  -->
+    <script src="script.js"></script>
+</body>
+</html>
